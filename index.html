@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Bank</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="World bank Publications">
+        <div class="phone_top">
+            <p>
+                8-800-100-5005
+                <br>
+                +7 (3452) 522-000
+            </p>    
+        </div>
+
+    </header>
+    <nav class="menu">
+        <ul class="main">
+            <li><a href="#">Кредитные карты</a></li>
+            <li><a href="#">Вклады</a></li>
+            <li><a href="#">Дебедовая карта</a></li>
+            <li><a href="#">Страхование</a></li>
+            <li><a href="#">Друзья</a></li>
+            <li><a href="#">Интернет-банк</a></li>
+        </ul>
+    </nav>
+    <section>
+        <div class="breadcrumb">
+            <span class="bread"><a href="#">Главная</a></span>
+            -
+            <span class="bread"><a href="#">Вклады</a></span>
+            -
+            <span class="breadcrumb_title"><a href="#">Калькулятор</a></span>
+        </div>
+        <form method="post" action="calc.php">
+        <div class="calculator">
+            <div class="title-calc">
+                <p>Калькулятор</p>
+            </div>
+            <div class="pay">
+            <div class="names-calc">
+                <p>Дата оформления вклада 
+                    <br> 
+                    Сумма вклада 
+                    <br> 
+                    Срок вклада 
+                    <br> 
+                    Пополнение вклада
+                    <br>
+                    Сумма пополнения вклада
+                </p>
+            </div>
+            <div class="vars-calc">
+                <input type="text" id="datepicker">
+                <br>
+                <input type="text" name="sumv" id="fromr1"><div id="range1"></div>
+                <br>
+                <select id="years" name="year">
+                    <option value=1>1 год</option>
+                    <option value=2>2 года</option>
+                    <option value=3>3 года</option>
+                    <option value=4>4 года</option>
+                    <option value=5>5 лет</option>
+                </select>
+                <br>
+                <p><input type="radio" name="radio1" value="1"> Нет</p>
+                <p><input type="radio" name="radio2" value="2"> Да</p>
+                <br>
+                <input type="text" name="sumadd" id="fromr2"><div id="range2"></div>
+            </div>
+            </div>
+            
+            <div class="result-calc">
+                <button class="bt-result">Рассчитать</button>
+                <div class="result-text" >
+                    Результат: 
+                </div>
+                <div class="reult-var">
+                </div>
+            </div>
+            
+        </div>
+        </form>
+    </section>
+    <footer>
+        <nav class="futter_nav">
+            <ul class="futter-main">
+                <li><a href="#"><ins>Кредитные карты</ins></a></li>
+                <li><a href="#"><ins>Вклады</ins></a></li>
+                <li><a href="#"><ins>Дебедовая карта</ins></a></li>
+                <li><a href="#"><ins>Страхование</ins></a></li>
+                <li><a href="#"><ins>Друзья</ins></a></li>
+                <li><a href="#"><ins>Интернет-банк</ins></a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>
